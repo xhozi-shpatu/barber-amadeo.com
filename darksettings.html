@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBer Amadeo:Settings</title>
+    <link rel="stylesheet" href="darkstyle.css">
+</head>
+<body>
+        <a href="#nav">
+            <div class="to-nav">
+                ↑
+            </div>
+        </a>
+    <nav id="nav">
+        <div class="buttons">
+            <a href="darkindex.html"><button class="to-go">HOME</button></a>
+            <a href="darkkontakt.html"><button class="to-go">KONTAKT</button></a>
+            <a href="darksettings.html"><button class="using">CILESIMET</button></a>
+        </div>
+        <a href="tel:+355682528456" class="phone">
+            +355682528456
+        </a>
+    </nav>
+    <h1 class="option-h1">CILESIMET</h1>
+    <div class="options">
+        <div class="option">
+            <h2>Dark Mode</h2>
+            <a href="index.html">
+                <a href="settings.html">
+                    <div class="on-off">
+                        Fik
+                    </div>
+                </a>
+            </a>
+        </div>
+        <div class="map-parent">
+        <div class="map">
+            <div id="h2">Vendndodhja jone:</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d370.298157642465!2d19.524457016307196!3d42.05636080323515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134e0194bed04893%3A0x8fb53e5d523db1e5!2sBar%20Restorant%20Ylli!5e0!3m2!1sen!2s!4v1685905036660!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </div>
+<footer>
+    <div class="container">
+<div class="parent">
+    <div class="headline">Rreth Nesh</div>
+    <div class="info">
+        <a href="index.html">Bar Bar Amadeo</a>
+        <a href="#">Na Kontaktoni</a>
+    </div>
+</div>
+<div class="parent">
+    <div class="headline">C'ofrojme</div>
+    <div class="info">
+        <a href="darkindex.html">Qethje normale</a>
+        <a href="darkindex.html">Qethje me stil</a>
+        <a href="darkindex.html">Rruajtje</a>
+    </div>
+</div>
+<div class="parent">
+    <div class="headline">Me shume</div>
+    <div class="info">
+        <a href="tel:+355682528456"><ion-icon name="call-outline"></ion-icon>+355682528456</a>
+        <a href="#"><ion-icon name="map-outline"></ion-icon>Lagja Mark Lula,Shkoder</a>
+    </div>
+</div>
+    </div>
+    <div class="bottom-footer">
+        © Amadeo BarBar . All rights reserved. 
+    </div>
+</footer>
+    <div class="cursor"> 
+    <div class="click-animation"> 
+        <div class="shape circle big"></div> 
+        <div class="shape circle small"></div> 
+        <div class="shape triangle yellow"></div> 
+        <div class="shape triangle green"></div> 
+        <div class="shape disc"></div> 
+    </div> 
+<script>        
+const cursorAnimation = document.querySelector(".cursor"); 
+    const cursors = document.querySelectorAll(".cursor"); 
+    document.addEventListener("click", (e) => {
+       let x = e.clientX; let y = e.clientY; cursorAnimation.style.top = y + "px"; cursorAnimation.style.left = x + "px"; cursors.forEach((cursor) => 
+       { cursor.classList.add("active"); function removeCursorActive(){
+           cursor.classList.remove("active"); 
+          } setTimeout(removeCursorActive, 1000); 
+      }); let cursorClone = cursorAnimation.cloneNode(true); document.querySelector("body").appendChild(cursorClone); setTimeout(() => { cursorClone.remove(); }, 1000);
+   });</script><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

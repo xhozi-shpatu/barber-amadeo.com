@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBer Amadeo:Kontaktet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <a href="#nav">
+            <div class="to-nav">
+                ↑
+            </div>
+        </a>
+    <nav id="nav">
+        <div class="buttons">
+            <a href="index.html"><button class="to-go">HOME</button></a>
+            <a href="kontakt.html"><button class="using">KONTAKT</button></a>
+            <a href="settings.html"><button class="to-go">CILESIMET</button></a>
+        </div>
+        <a href="tel:+355682528456" class="phone">
+            +355682528456
+        </a>
+    </nav>
+    <h1>INSTAGRAM</h1>
+    <a target="_blank" href="https://www.instagram.com/amadeo_nika/">
+        <img src="ig.png" id="ig-logo">
+    </a>
+    <h1>WHATSAPP</h1>
+    <div id="parent">
+    <a href="tel:+355682528456">
+        <img src="whatsapp dark.png" id="wa">
+    </a>
+    </div>
+<footer>
+    <div class="container">
+<div class="parent">
+    <div class="headline">Rreth Nesh</div>
+    <div class="info">
+        <a href="index.html">Bar Bar Amadeo</a>
+        <a href="#">Na Kontaktoni</a>
+    </div>
+</div>
+<div class="parent">
+    <div class="headline">C'ofrojme</div>
+    <div class="info">
+        <a href="darkindex.html">Qethje normale</a>
+        <a href="darkindex.html">Qethje me stil</a>
+        <a href="darkindex.html">Rruajtje</a>
+    </div>
+</div>
+<div class="parent">
+    <div class="headline">Me shume</div>
+    <div class="info">
+        <a href="tel:+355682528456"><ion-icon name="call-outline"></ion-icon>+355682528456</a>
+        <a href="#"><ion-icon name="map-outline"></ion-icon>Lagja Mark Lula,Shkoder</a>
+    </div>
+</div>
+    </div>
+    <div class="bottom-footer">
+        © Amadeo BarBar . All rights reserved. 
+    </div>
+</footer>
+    <div class="cursor"> 
+    <div class="click-animation"> 
+        <div class="shape circle big"></div> 
+        <div class="shape circle small"></div> 
+        <div class="shape triangle yellow"></div> 
+        <div class="shape triangle green"></div> 
+        <div class="shape disc"></div> 
+    </div> 
+<script>        
+const cursorAnimation = document.querySelector(".cursor"); 
+    const cursors = document.querySelectorAll(".cursor"); 
+    document.addEventListener("click", (e) => {
+       let x = e.clientX; let y = e.clientY; cursorAnimation.style.top = y + "px"; cursorAnimation.style.left = x + "px"; cursors.forEach((cursor) => 
+       { cursor.classList.add("active"); function removeCursorActive(){
+           cursor.classList.remove("active"); 
+          } setTimeout(removeCursorActive, 1000); 
+      }); let cursorClone = cursorAnimation.cloneNode(true); document.querySelector("body").appendChild(cursorClone); setTimeout(() => { cursorClone.remove(); }, 1000);
+   });</script><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
